@@ -7,11 +7,11 @@
 var longestCommonPrefix = function(strs)
 {
     var l = strs.length;//获取数组元素
-    console.log(l);
-    if(l!=0)
+    //console.log(l);
+    if(l!=0)//判断空数组
     {
     var str0 = strs[0];
-    if(str0 !="")
+    if(str0 !="")//判断数组空元素
     {
     var l1 = str0.length;//获取第一个元素长度
     var ret = str0[0];
@@ -25,7 +25,7 @@ var longestCommonPrefix = function(strs)
         //console.log(strs[j][i]);
         if(strs[j][i]!=temp){var flag =1;return ret}
       }
-      if(i==l1-1 && flag!=1)
+      if(i==l1-1 && flag!=1)//判断第一个元素为共同前缀
       {ret = str0;}
     }
     return ret;
