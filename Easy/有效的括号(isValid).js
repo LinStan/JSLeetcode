@@ -11,17 +11,18 @@ var isValid = function (s) {
         switch (c) {//推入一个对称的括号符号
             case '(':
                 stack.push(')');
-                console.log(stack);
+                //console.log(stack);
                 break;
             case '[':
-                stack.push(']');console.log(stack);
+                stack.push(']');//console.log(stack);
                 break;
             case '{':
-                stack.push('}');console.log(stack);
+                stack.push('}');//console.log(stack);
                 break;
             default://当输入为右括号，弹出栈，判断是否相等
-                if (!stack.length || stack.pop() !== c) {
-                    console.log(stack);
+            //!stack.length 和stack.length==0相等
+            //if (!stack.length|| stack.pop() !== c) {
+                if (stack.length==0|| stack.pop() !== c) {
                     return false;
                 }
 
@@ -32,6 +33,7 @@ var isValid = function (s) {
     else
     {return false}
 };
-console.log(isValid("[]"));
+console.log(isValid("[(]"));
 console.log(isValid(""));
+console.log(isValid("{}"));
 console.log(isValid("[{}]()"));
