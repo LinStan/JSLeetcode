@@ -23,7 +23,7 @@ function ListNode(val){
 var mergeTwoLists = function(l1, l2) {
   var current1 =l1;
   var current2 =l2;
-  var ln = new ListNode(-1);//一个长度可变的链表
+  var ln = new ListNode(-1);//创建一个头元素为-1的链表
   var current =ln;//获取三个链表的头元素
   //console.log(l1);
   //console.log(l2);
@@ -43,8 +43,8 @@ var mergeTwoLists = function(l1, l2) {
     } else {
         current.next = current2;
     }
-    return ln;
+    return ln.next;
 };
 console.log(mergeTwoLists([1,2,4],[1,3,4]));
-console.log(mergeTwoLists([1,2,4],[]));
-console.log(mergeTwoLists([1,2,3],[4,5,6]));
+//console.log(mergeTwoLists([1,2,4],[]));
+//console.log(mergeTwoLists([1,2,3],[4,5,6]));
