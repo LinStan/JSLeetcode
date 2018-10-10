@@ -13,7 +13,6 @@ var threeSumClosest = function(nums, target) {
   var min = 99999999;
   for(var i = 0, len1 = array.length; i < len1; i++) {
   	var a2 = array.concat();
-   //console.log(a2);
   	/*
   	排除之前已经组合过的数据
   	比如：第一次的时候，i[0] = 1, 这个时候2层循环, 只循环 2~5,
@@ -26,13 +25,13 @@ var threeSumClosest = function(nums, target) {
   		var a3 = a2.concat();
   		a3.splice(0, j + 1);
   		for(var k = 0, len3 = a3.length; k < len3; k++) {
-  			//console.log(array[i] + ' ' +a2[j] + ' ' + a3[k]);
+  			console.log(array[i] + ' ' +a2[j] + ' ' + a3[k]);
        result = [array[i],a2[j],a3[k]];
        var temp = array[i]+a2[j]+a3[k];
        //console.log(temp);
        if(temp-target===0){return temp;}
        if(Math.abs(temp-target)<min){min = Math.abs(temp-target);var re = temp;}
-       console.log(result,re,min);
+       //console.log(result,re,min);
   		}
   	}
   }
