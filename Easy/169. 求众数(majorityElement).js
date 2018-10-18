@@ -2,6 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
+ //统计出现频率
 var count = function(nums,k)
  {
    var flag = 0;
@@ -11,6 +12,7 @@ var count = function(nums,k)
    }
    return flag;
  }
+ //出现频率达到阈值就输出
 var majorityElement = function(nums) {
     for(var i = 0;i<nums.length/2;i++)
     {
