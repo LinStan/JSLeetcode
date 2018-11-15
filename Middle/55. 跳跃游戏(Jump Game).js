@@ -2,6 +2,7 @@
  * @param {number[]} nums
  * @return {boolean}
  */
+ //执行用时: 72 ms, 在Jump Game的JavaScript提交中击败了96.91% 的用户
 //最大可跳跃步长
 var canJump = function(nums) {
     var l = nums.length;
