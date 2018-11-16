@@ -1,16 +1,15 @@
 /**
- * @param {number} numRows
- * @return {number[][]}
+ * @param {number} rowIndex
+ * @return {number[]}
  */
- //执行用时: 64 ms, 在Pascal's Triangle的JavaScript提交中击败了97.60% 的用户
-var generate = function(numRows) {
-    if(numRows==0){return []}
-    else if(numRows==1){return [[1]]}
-    else if(numRows==2){return [[1],[1,1]]}
+ //80 ms, 在Pascal's Triangle II的JavaScript提交中击败了42.38% 的用户
+var getRow = function(rowIndex) {
+    if(rowIndex==0){return [1]}
+    else if(rowIndex==1){return [1,1]}
     var re = [];
     re[0]=[1];
     re[1]=[1,1];
-    for(var i = 2;i<numRows;i++)
+    for(var i = 2;i<=rowIndex;i++)
         {
             re[i]=[];
             //console.log(re[i],i)
@@ -25,6 +24,5 @@ var generate = function(numRows) {
                 }
             //console.log(re[i],i)
         }
-    return re
+    return re[rowIndex]
 };
-console.log(generate(33));
