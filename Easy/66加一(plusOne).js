@@ -2,29 +2,35 @@
  * @param {number[]} digits
  * @return {number[]}
  */
+ //战胜37.30%
  /*
  //数组长度超过16就无法计算
-var plusOne = function(digits) {
-    var temp=0;
-    var re=[],sum=[];
-    var l =digits.length;
-    for(var i=0;i<digits.length;i++)
-    {
-      temp = temp + digits[i]*Math.pow(10,l-i-1);
-      console.log(l,l-i,temp);
-    }
-    temp = temp+1;//+1后的数字
-    var tl = temp.toString().length;
-    for(var j=0;j<tl;j++)
-    {
-      sum[j] = temp % 10;
-      temp = parseInt(temp/10);
-    }
-    for(i=0;i<tl;i++)
-    {re[i]=sum[tl-i-1]}
-
-    //console.log(temp,tl);
-    return re;
+ var plusOne = function(digits) {
+     var l = digits.length;
+     digits[l-1]+=1;
+     var temp = 0;
+     for(var i=l-1;i>=0;i--)
+         {
+             digits[i]+=temp;
+             if(digits[i]>=10)
+                 {
+                     digits[i]=digits[i]-10;
+                     temp=1;
+                 }
+             else
+                 {
+                     temp=0;
+                 }
+         }
+     if(temp == 1)
+         {
+             return [1].concat(digits);
+         }
+     else
+         {
+             return digits
+         }
+ };
 };*/
 
 var plusOne = function(digits) {
