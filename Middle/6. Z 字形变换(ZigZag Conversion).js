@@ -4,7 +4,7 @@
  * @return {string}
  */
  //508 ms, 在ZigZag Conversion的JavaScript提交中击败了7.97% 的用户
-var convert = function(s, numRows) {
+  var convert = function(s, numRows) {
     if(numRows==1){return s}
     var str = new Array();
     for(var i =0;i<numRows;i++)
