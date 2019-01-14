@@ -1,5 +1,5 @@
 # 本项目主要记录JS学习过程，使用JS进行leetcode的学习。
-## 2019.1.11
+## 2019.1.14
 ## 目前进度120/739
 ### 难度分布：
 * EASY：86
@@ -18,10 +18,11 @@
 * Leetcode Weekly Contest 114 完成2/4
 * Leetcode Weekly Contest 115 完成1/4
 * Leetcode Weekly Contest 118 完成2/4
+* Leetcode Weekly Contest 119 完成2/4
 ### 卡片进度
 * 数组和字符串
   * 数组简介 √
-  * 二维数组简介
+  * 二维数组简介 2/4
   * 字符串简介
   * 双指针技巧
   * 小结
