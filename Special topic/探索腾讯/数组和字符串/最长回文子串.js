@@ -50,3 +50,46 @@ var longestPalindrome = function(s) {
         }
     return maxtemp
 }
+/*
+* 中心扩展
+* 148 ms	17.7 MB
+* 的提交执行用时已经战胜 72.53 % 的 javascript 提交记录
+*/
+var longestPalindrome = function(s) {
+    if(s==null&&s=="")
+        {return ""}
+    let l = s.length;
+    let left,right;
+    let ret='';
+    let temp = '';
+    for(let i = 0;i<l;i++)
+        {
+            left=i,right=i;
+         //   console.log(s[left],s[right])
+            temp = expansion(s,left,right);
+            if(temp.length>ret.length)
+                {
+                    ret = temp;
+                }
+         //   console.log(ret,temp)
+            temp = expansion(s,left,right+1);
+            if(temp.length>ret.length)
+                {
+                    ret = temp;
+                }
+          //  console.log(ret,temp)
+        }
+    return ret
+}
+var expansion = function(s,left,right)
+{
+    while(left>=0&&right<s.length&&s[left]==s[right])
+        {
+            left--;
+            right++;
+        }
+    let ret = s.substring(left+1,right) //截取范围为 [left,right) 包括起点不包括终点
+   // let ret = s.slice(left-1,right) //截取错误 (start,end]不包括起点，包括终点
+  //  console.log(ret)
+    return ret;
+}
