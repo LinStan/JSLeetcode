@@ -15,4 +15,4 @@ var isPalindrome = function(x) {
       return true;
     }
 };
-//console.log(isPalindrome(12321));
+console.log(isPalindrome(12321));
