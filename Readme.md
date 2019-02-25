@@ -1,5 +1,5 @@
 # 本项目主要记录JS学习过程，使用JS进行leetcode的学习。
-## 2019.2.22    春节放羊了一个月😧
+## 2019.2.25    春节放羊了一个月😧
 ## 目前进度121/739
 ### 难度分布：
 * EASY：87
@@ -20,6 +20,7 @@
 * Leetcode Weekly Contest 118 完成2/4
 * Leetcode Weekly Contest 119 完成2/4
 * Leetcode Weekly Contest 120 完成2/4
+* Leetcode Weekly Contest 125 完成2/4
 ### 专题进度
 * 数组和字符串 2019.1.21 完成
   * 数组简介 √
