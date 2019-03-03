@@ -22,6 +22,7 @@
 * Leetcode Weekly Contest 119 完成2/4
 * Leetcode Weekly Contest 120 完成2/4
 * Leetcode Weekly Contest 125 完成2/4
+* Leetcode Weekly Contest 126 完成1/4 (1超时完成)
 ### 专题进度
 * 数组和字符串 2019.1.21 完成
   * 数组简介 √
