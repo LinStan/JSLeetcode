@@ -1,12 +1,21 @@
 # 本项目主要记录JS学习过程，使用JS进行leetcode以及剑指offer的学习。
-## 2019.3.20    春节放羊了一个月😧
+
+## 2019.3.21
+
 三月份要赶论文。同时还要学Vue。刷题进度估计会慢很多
+
 ## 目前进度142/739
+
+## 剑指Offer 28/66
+
 ### 难度分布：
+
 * EASY：98
 * MIDDLE：42
 * HARD：2
+
 ### 周竞赛进度
+
 * Leetcode Weekly Contest 103 完成1/4
 * Leetcode Weekly Contest 104 完成1/4
 * Leetcode Weekly Contest 106 完成2/4
@@ -23,7 +32,9 @@
 * Leetcode Weekly Contest 120 完成2/4
 * Leetcode Weekly Contest 125 完成2/4
 * Leetcode Weekly Contest 126 完成1/4 (1超时完成)
+
 ### 专题进度
+
 * 数组和字符串 2019.1.21 完成
   * 数组简介 √
   * 二维数组简介 √
@@ -38,4 +49,4 @@
   * 小结
 * 探索腾讯 20%
   * 数组和字符串
-## 剑指Offer 27/66
+  
