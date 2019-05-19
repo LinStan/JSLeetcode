@@ -1,6 +1,6 @@
 # 本项目主要记录JS学习过程，使用JS进行leetcode以及剑指offer的学习。
 
-## 2019.5.13
+## 2019.5.19
 
 ## 目前进度154/873
 
@@ -30,6 +30,7 @@
 * Leetcode Weekly Contest 120 完成2/4
 * Leetcode Weekly Contest 125 完成2/4
 * Leetcode Weekly Contest 126 完成1/4 (1超时完成)
+* Leetcode Weekly Contest 137 完成2/4
 
 ### 专题进度
 
