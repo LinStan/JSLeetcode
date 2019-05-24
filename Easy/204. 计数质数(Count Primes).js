@@ -2,27 +2,24 @@
  * @param {number} n
  * @return {number}
  */
- //时间太长待改进
-var isPrimes = function(n)
-{
-    for(var i = 2;i<=Math.sqrt(n);i++)
-        {
-            if(n%i==0)
-                {return false}
+var countPrimes = function (n) {
+    let ret = 0,
+        flag = 1;
+    if (n < 2) {
+        return 0
+    }
+    for (let i = 1; i < n; i++) {
+        for (let j = 2; j <= Math.sqrt(i); j++) {
+            if (i % j == 0) {
+                flag = 0;
+                break;
+            }
         }
-    if(n>=2)
-        {
-            return true
+        if (flag == 2) {
+            ret++;
+        } else {
+            flag = 2;
         }
-}
-var countPrimes = function(n) {
-    var num = 0;
-    for(var i = 1;i<n;i++)
-        {
-            if(isPrimes(i))
-                {
-                    num++;
-                }
-        }
-    return num;
+    }
+    return ret
 };
