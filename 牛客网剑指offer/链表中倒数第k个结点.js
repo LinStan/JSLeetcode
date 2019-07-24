@@ -5,7 +5,7 @@
     this.val = x;
     this.next = null;
 }*/
-function FindKthToTail(head, k) {
+function FindKthToTail (head, k) {
   // write code here
   let l = 0;
   let head1 = head
@@ -25,4 +25,29 @@ function FindKthToTail(head, k) {
   //console.log(head,head1)
   //let ret = head.val;
   return head
+}
+//快慢指针法
+// 设定两个指针，i为head的副本，j为指针
+// 当j移动k次后i开始移动，这样当j到达链表尾部，i刚好是倒数第k个
+/*function ListNode(x){
+    this.val = x;
+    this.next = null;
+}*/
+function FindKthToTail (head, k) {
+  // write code here
+  let ret = [], i = head, j = 0;
+  while (head) {
+    if (j < k) {
+      head = head.next
+    }
+    else {
+      i = i.next;
+      head = head.next;
+    }
+    j++;
+  }
+  if (j < k) return null
+  else {
+    return i
+  }
 }
