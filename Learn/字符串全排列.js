@@ -1,17 +1,17 @@
-function Permutation(str) {
+function Permutation (str) {
   let temp = str.split('')
   let ret = [];
   full_permutation(temp, 0, temp.length - 1, ret);
   return ret.sort();
 }
 
-function swap(str, a, b) {
+function swap (str, a, b) {
   let tmp = str[a];
   str[a] = str[b];
   str[b] = tmp;
 }
 
-function is_swap(str, begin, k) { //判断从子串的第一个字符串开始，直到k-1位置，看是否有重复的字符
+function is_swap (str, begin, k) { //判断从子串的第一个字符串开始，直到k-1位置，看是否有重复的字符
   let i, flag;
 
   for (i = begin, flag = 1; i < k; i++) {
@@ -24,7 +24,7 @@ function is_swap(str, begin, k) { //判断从子串的第一个字符串开始�
   return flag;
 }
 
-function full_permutation(str, begin, end, ret) {
+function full_permutation (str, begin, end, ret) {
   if (begin == end) {
     ret.push(str.join(''));
     return;
@@ -40,4 +40,4 @@ function full_permutation(str, begin, end, ret) {
   }
 };
 // console.log(Permutation("aliab"))
-console.log(Permutation("abc"))
+console.log(Permutation("aaabb"))

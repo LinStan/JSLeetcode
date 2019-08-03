@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav {
+      width: 600px;
+      height: 40px;
+      margin: 0 auto;
+      background-color: #cccccc;
+    }
+
+
+    .tri {
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid black;
+
+    }
+
+    .tri:hover {
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid black;
+    }
+
+    ul {
+      list-style: none;
+      line-height: 40px;
+    }
+
+    a {
+      text-decoration: none;
+      display: block;
+      color: #000;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    ul li {
+      float: left;
+    }
+
+    ul li ul li {
+      float: none;
+      display: none;
+    }
+
+    /*鼠标经过 显示*/
+    ul li:hover li {
+      display: block;
+    }
+
+    ul li ul li a {
+      background-color: white
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nav">
+    <ul>
+      <li><a href="#">首页</a></li>
+      <li><a href="#">客户服务<span class=tri></span></a>
+        <ul class=downwarp>
+          <li><a href="#">联系客服</a>
+          </li>
+          <li><a href="#">帮助中心</a>
+          </li>
+          <li><a href="#">知识产权保护</a>
+          </li>
+          <li><a href="#">规则中心</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>
