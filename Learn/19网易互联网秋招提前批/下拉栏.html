@@ -16,26 +16,21 @@
       width: 600px;
       height: 40px;
       margin: 0 auto;
-      background-color: #cccccc;
+      background-color: black;
+      position: relative;
     }
 
 
     .tri {
-      width: 0;
-      height: 0;
-      border-left: 5px solid transparent;
-      border-right: 5px solid transparent;
-      border-top: 5px solid black;
-
+      width: 0px;
+      height: 0px;
+      border: 5px solid transparent;
+      border-top: 5px solid white;
+      margin: 18px 3px;
+      position: absolute;
     }
 
-    .tri:hover {
-      width: 0;
-      height: 0;
-      border-left: 5px solid transparent;
-      border-right: 5px solid transparent;
-      border-bottom: 5px solid black;
-    }
+
 
     ul {
       list-style: none;
@@ -45,27 +40,52 @@
     a {
       text-decoration: none;
       display: block;
-      color: #000;
+      color: white;
       padding: 0 20px;
-      text-align: center;
+      /* text-align: center; */
     }
 
     ul li {
+      width: 120px;
       float: left;
     }
 
     ul li ul li {
+      font-size: 12px;
       float: none;
       display: none;
+    }
+
+    ul li:hover {
+      background-color: white;
+    }
+
+    ul li:hover a {
+      color: black;
+    }
+
+    ul li:hover .tri {
+      width: 0;
+      height: 0;
+      border: 5px solid transparent;
+      border-bottom: 5px solid black;
+      margin: 15px 3px;
+      position: absolute;
     }
 
     /*鼠标经过 显示*/
     ul li:hover li {
       display: block;
+
     }
 
     ul li ul li a {
-      background-color: white
+      background-color: white;
+      color: black;
+    }
+
+    ul li:hover {
+      box-shadow: #cccccc 0px 0px 5px 2px;
     }
   </style>
 </head>
@@ -73,9 +93,14 @@
 <body>
   <div class="nav">
     <ul>
-      <li><a href="#">首页</a></li>
-      <li><a href="#">客户服务<span class=tri></span></a>
-        <ul class=downwarp>
+      <li class=downwarp><a href="#">首页<span class=tri></span></a>
+        <ul>
+          <li><a href="#">首页二级</a>
+          </li>
+        </ul>
+      </li>
+      <li class=downwarp><a href="#">客户服务<span class=tri></span></a>
+        <ul>
           <li><a href="#">联系客服</a>
           </li>
           <li><a href="#">帮助中心</a>
